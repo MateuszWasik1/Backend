@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend\\Lab2\\Lab2\\Lab2.csproj",
+      "projectUniqueName": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend2\\Lab2\\Lab2\\Lab2.csproj",
       "projectName": "Lab2",
-      "projectPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend\\Lab2\\Lab2\\Lab2.csproj",
+      "projectPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend2\\Lab2\\Lab2\\Lab2.csproj",
       "packagesPath": "D:\\Users\\mateusz.wasik\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend\\Lab2\\Lab2\\obj\\",
+      "outputPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\Backend2\\Lab2\\Lab2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
