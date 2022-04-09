@@ -65,22 +65,22 @@
 // ZADANIE 5
 
 
-//using System;
-//
-//namespace ConsoleApp1
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            DateTime localTime = DateTime.Today;
-//            DateTime globalTime = DateTime.UtcNow;
-//            
-//            Console.WriteLine("Aktualny lokalny czas: {0}", localTime.ToString("yyyy-MM-dd hh:mm:ss"));
-//            Console.WriteLine("Aktualny globalny czas: {0}", globalTime.ToString("yyyy-MM-dd hh:mm:ss"));
-//        }
-//    }
-//}
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime localTime = DateTime.Today;
+            DateTime globalTime = DateTime.UtcNow;
+            
+            Console.WriteLine("Aktualny lokalny czas: {0}", localTime.ToString("yyyy-MM-dd hh:mm:ss"));
+            Console.WriteLine("Aktualny globalny czas: {0}", globalTime.ToString("yyyy-MM-dd hh:mm:ss"));
+        }
+    }
+}
 
 
 // ZADANIE 7
