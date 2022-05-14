@@ -1,0 +1,13 @@
+1. Projekt zaliczeniowy - System zarz¹dzania bibliotek¹
+2. Harmonogram prac 
+	A. Utworzenie bazy danej sk³adaj¹cej siê z co najmniej 4 tabel
+	B. Utworzenie prostego interfejsu u¿ytkownika
+	C. Utworzenie projektu typu API s³u¿¹cego do zarz¹dzania RESTem 
+	D. Utworzenie testów jednostkowych do projektu
+	E. Utworzenie testów integracyjnych do projektu (?)
+	F. Wyœwietlanie danych z bazy na stronie
+	G. Mo¿liwoœæ edycji / usuniêcia danych z poziomu strony
+	H. Utworzenie strony g³ównej
+	I. Utworzenie mo¿liwoœci zarejestrowania siê
+	J. Utworzenie menu logowania siê
+	K. Opis korzystania z aplikacji
