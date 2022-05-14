@@ -30,7 +30,7 @@ namespace Lab3.Controllers
             var users = _context.Users.ToList();
             return Ok(users);
         }
-        // GET: api/Users/5
+        // GET: api/Users/{{id}}
         [HttpGet("{id}")]
         public async Task<ActionResult<Users>> GetUsers(int id)
         {
@@ -44,8 +44,7 @@ namespace Lab3.Controllers
             return users;
         }
 
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Users/{{id}}/update
         [HttpPut("{id}/update")]
         public async Task<IActionResult> PutUsers(int id, Users users)
         {
@@ -75,6 +74,7 @@ namespace Lab3.Controllers
             return NoContent();
         }
 
+        // POST: api/Users
         [HttpPost("create")]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
@@ -84,6 +84,7 @@ namespace Lab3.Controllers
             return CreatedAtAction("GetUsers", new { id = users.id }, users);
         }
 
+        // DELETE: api/Users/{{id}}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsers(int id)
         {
