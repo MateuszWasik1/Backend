@@ -11,5 +11,6 @@ namespace FinalProject.Entities
         public string AFirstName { get; set; }
         public string AMiddleName { get; set; }
         public string ALastName { get; set; }
+        public string AFullName { get; set; }
     }
 }

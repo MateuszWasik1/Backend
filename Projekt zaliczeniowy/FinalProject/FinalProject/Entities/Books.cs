@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FinalProject.Entities
 {
@@ -12,5 +13,8 @@ namespace FinalProject.Entities
         public string BISBN { get; set; }
         public DateTime BPublishDate { get; set; }
         public List<Authors> BAuthors { get; set; }
+
+        //[ForeignKey("Authors")]
+        //public Authors BAuthors { get; set; }
     }
 }
