@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1rp1JnODxPKjR7Dk3QSQmb3WV8WNK8HDJqlnR9dvOMxaHEQJLXWmcjZ0Y7TnR5U81X5yCQIM90/xkzv0OaLQYw==",
+  "dgSpecHash": "rLTRNdBJkMPdkM+mIJ9JeFdsHkJgfBDwBqliPIuI3DqjpvwVhkFcMF5aJ/klWLN5kQjs426EfIUD8tgPXV2ywA==",
   "success": true,
-  "projectFilePath": "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
+  "projectFilePath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
   "expectedPackageFiles": [
     "D:\\Users\\mateusz.wasik\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "D:\\Users\\mateusz.wasik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -135,7 +135,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Pakiet „EntityFramework 5.0.0” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net5.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         "net5.0"

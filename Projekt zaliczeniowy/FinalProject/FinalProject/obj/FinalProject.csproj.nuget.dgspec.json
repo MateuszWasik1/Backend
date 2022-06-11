@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj": {}
+    "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj": {}
   },
   "projects": {
-    "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj": {
+    "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectUniqueName": "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\FinalProject.csproj",
         "packagesPath": "D:\\Users\\mateusz.wasik\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\mateusz.wasik\\source\\repos\\Backend2\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\obj\\",
+        "outputPath": "D:\\Users\\mateusz.wasik\\Source\\Repos\\MateuszWasik1\\Backend\\Projekt zaliczeniowy\\FinalProject\\FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
