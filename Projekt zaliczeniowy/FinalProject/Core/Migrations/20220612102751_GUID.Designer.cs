@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core.Migrations
 {
     [DbContext(typeof(Entities.AppContext))]
-    [Migration("20220514120453_14052022_PrimaryMigration")]
-    partial class _14052022_PrimaryMigration
+    [Migration("20220612102751_GUID")]
+    partial class GUID
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,6 +29,9 @@ namespace Core.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("AFirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AFullName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("AGID")

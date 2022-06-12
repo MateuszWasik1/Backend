@@ -12,7 +12,7 @@ namespace Core.Entities
         public string CLastName { get; set; }
         public int CCardCode { get; set; }
 
-        //public List<Books> CBooks { get; set; }
+        public List<Books> CBooks { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@ namespace Core.Entities
         public string BTitle { get; set; }
         public string BISBN { get; set; }
         public DateTime BPublishDate { get; set; }
-        //public List<Authors> BAuthors { get; set; }
+        public List<Authors> BAuthors { get; set; }
 
         //[ForeignKey("Authors")]
         //public Authors BAuthors { get; set; }

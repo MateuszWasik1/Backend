@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Core.Migrations
 {
-    [DbContext(typeof(DBContext))]
+    [DbContext(typeof(Entities.AppContext))]
     partial class DBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -27,6 +27,9 @@ namespace Core.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("AFirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AFullName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("AGID")
