@@ -12,13 +12,13 @@ namespace Core.Entities
         public DbSet<Books> Books { get; set; }
         public DbSet<Authors> Authors { get; set; }
         public DbSet<Customers> Customers { get; set; }
-        public DBContext(DbContextOptions options) : base(options)
-        {
-
-        }
+        //public DBContext(DbContextOptions options) : base(options)
+        //{
+        //
+        //}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=PK6-10\\mssqllocaldb;Database=Projekt;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-51V4NLA\\SQLEXPRESS;Database=Projekt;Trusted_Connection=True;");
         }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)

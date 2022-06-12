@@ -7,7 +7,7 @@ namespace Core.Entities
     {
         [Key]
         public int AId { get; set; }
-        public Guid AGID { get; set; }
+        //public Guid AGID { get; set; }
         public string AFirstName { get; set; }
         public string AMiddleName { get; set; }
         public string ALastName { get; set; }
