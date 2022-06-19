@@ -4,38 +4,37 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Szczegóły autora</h1>
 
 <div>
-    <h4>Authors</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AGID)
+        <dt class="col-sm-2">
+            <span>GUID Autora:</span>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AGID)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AFirstName)
+        <dt class="col-sm-2">
+            <span>Pierwsze imię:</span>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AFirstName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AMiddleName)
+        <dt class="col-sm-2">
+            <span>Drugie imię:</span>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AMiddleName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ALastName)
+        <dt class="col-sm-2">
+            <span>Nazwisko:</span>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ALastName)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AFullName)
+        <dt class="col-sm-2">
+            <span>Pełne imię:</span>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AFullName)
@@ -43,6 +42,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.AId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.AId">Edytuj</a> |
+    <a asp-action="Index">Powrót do listy autorów</a>
 </div>

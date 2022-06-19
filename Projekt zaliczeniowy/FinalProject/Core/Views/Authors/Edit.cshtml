@@ -4,9 +4,8 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edytuj autora</h1>
 
-<h4>Authors</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,39 +13,39 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="AId" />
             <div class="form-group">
-                <label asp-for="AGID" class="control-label"></label>
+                <label class="control-label">GUID Autora:</label>
                 <input asp-for="AGID" class="form-control" />
                 <span asp-validation-for="AGID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AFirstName" class="control-label"></label>
+                <label class="control-label">Pierwsze imię:</label>
                 <input asp-for="AFirstName" class="form-control" />
                 <span asp-validation-for="AFirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AMiddleName" class="control-label"></label>
+                <label class="control-label">Drugie imię:</label>
                 <input asp-for="AMiddleName" class="form-control" />
                 <span asp-validation-for="AMiddleName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ALastName" class="control-label"></label>
+                <label class="control-label">Nazwisko:</label>
                 <input asp-for="ALastName" class="form-control" />
                 <span asp-validation-for="ALastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AFullName" class="control-label"></label>
+                <label class="control-label">Pełne imię:</label>
                 <input asp-for="AFullName" class="form-control" />
                 <span asp-validation-for="AFullName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Powrót do listy autorów</a>
 </div>
 
 @section Scripts {

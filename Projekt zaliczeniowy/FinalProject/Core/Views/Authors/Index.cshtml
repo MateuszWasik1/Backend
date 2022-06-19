@@ -4,28 +4,28 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="page-title">Lista autorów</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Dodaj nowego autora</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AGID)
+                <span>GUID Autora:</span>            
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AFirstName)
+                <span>Pierwsze imię:</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AMiddleName)
+                <span>Drugie imię:</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ALastName)
+                <span>Nazwisko:</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AFullName)
+                <span>Pełne imię:</span>
             </th>
             <th></th>
         </tr>
@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.AFullName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.AId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.AId">Edytuj</a>
+                <a asp-action="Details" asp-route-id="@item.AId">Szczegóły</a>
+                <a asp-action="Delete" asp-route-id="@item.AId">Usuń</a>
             </td>
         </tr>
 }

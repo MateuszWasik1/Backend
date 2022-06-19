@@ -4,44 +4,45 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="page-title">Lista książek</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Dodaj nową książkę</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.BTitle)
+                <span>Tytuł książki:</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BISBN)
+                <span>Numer ISBN książki:</span>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BPublishDate)
+                <span>Data publikacji:</span>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.BTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BISBN)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BPublishDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.BId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.BId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.BId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BISBN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BPublishDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.BId">Edytuj</a>
+                    <a asp-action="Details" asp-route-id="@item.BId">Szczegóły</a>
+                    <a asp-action="Delete" asp-route-id="@item.BId">Usuń</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

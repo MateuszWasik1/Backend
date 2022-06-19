@@ -4,38 +4,37 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Dodaj klienta</h1>
 
-<h4>Customers</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="CFirstName" class="control-label"></label>
+                <label class="control-label">Imię klienta:</label>
                 <input asp-for="CFirstName" class="form-control" />
                 <span asp-validation-for="CFirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CLastName" class="control-label"></label>
+                <label class="control-label">Nazwisko klienta:</label>
                 <input asp-for="CLastName" class="form-control" />
                 <span asp-validation-for="CLastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CCardCode" class="control-label"></label>
+                <label class="control-label">Numer karty klienta:</label>
                 <input asp-for="CCardCode" class="form-control" />
                 <span asp-validation-for="CCardCode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Dodaj" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Powrót do listy klientów</a>
 </div>
 
 @section Scripts {

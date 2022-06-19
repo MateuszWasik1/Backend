@@ -4,9 +4,8 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edytuj bibliotekarza</h1>
 
-<h4>Librarians</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,29 +13,29 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="LId" />
             <div class="form-group">
-                <label asp-for="LFirstName" class="control-label"></label>
+                <label class="control-label">Imię bibliotekarza:</label>
                 <input asp-for="LFirstName" class="form-control" />
                 <span asp-validation-for="LFirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LLastName" class="control-label"></label>
+                <label class="control-label">Nazwisko bibliotekarza:</label>
                 <input asp-for="LLastName" class="form-control" />
                 <span asp-validation-for="LLastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LEmail" class="control-label"></label>
+                <label class="control-label">Email bibliotekarza:</label>
                 <input asp-for="LEmail" class="form-control" />
                 <span asp-validation-for="LEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Powrót do listy bibliotekarzy</a>
 </div>
 
 @section Scripts {
