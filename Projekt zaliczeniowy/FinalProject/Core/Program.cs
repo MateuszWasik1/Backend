@@ -21,7 +21,7 @@ namespace Core
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>()
-                    .UseUrls(urls: "http://localhost:62490");
+                    .UseUrls(urls: "http://localhost:44377");
                 });
     }
 }
