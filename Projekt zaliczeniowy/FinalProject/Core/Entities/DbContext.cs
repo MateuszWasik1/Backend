@@ -19,6 +19,7 @@ namespace Core.Entities
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-51V4NLA\\SQLEXPRESS;Database=Projekt;Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Projekt;Trusted_Connection=True;");
         }
     }
 }
