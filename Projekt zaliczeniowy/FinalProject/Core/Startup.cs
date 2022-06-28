@@ -1,5 +1,6 @@
 using Core.Entities;
 using Core.Seeder;
+using Core.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +26,7 @@ namespace Core
             services.AddControllersWithViews();
             services.AddDbContext<Entities.AppContext>();
             services.AddScoped<Seeder.Seeder>();
+            services.AddScoped<IAccountService, AccountService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

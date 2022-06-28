@@ -4,14 +4,16 @@ using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Core.Migrations
 {
     [DbContext(typeof(Core.Entities.AppContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    [Migration("20220628190728_28062022_Autentication")]
+    partial class _28062022_Autentication
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,8 +128,8 @@ namespace Core.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("RName")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("RName")
+                        .HasColumnType("int");
 
                     b.HasKey("RID");
 

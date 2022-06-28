@@ -41,6 +41,12 @@ namespace Core.Seeder
                     _dbContext.Librarians.AddRange(librarians);
                     _dbContext.SaveChanges();
                 }
+                if (!_dbContext.Roles.Any())
+                {
+                    var roles = GetRoles();
+                    _dbContext.Roles.AddRange(roles);
+                    _dbContext.SaveChanges();
+                }
             }
         }
         private IEnumerable<Authors> GetAuthors()
@@ -187,6 +193,25 @@ namespace Core.Seeder
                 },
             };
             return librarians;
+        }
+        private IEnumerable<Role> GetRoles()
+        {
+            var roles = new List<Role>()
+            {
+                new Role()
+                {
+                    RName = "User"
+                },
+                new Role()
+                {
+                    RName = "Librarian"
+                },
+                 new Role()
+                {
+                    RName = "Admin"
+                }
+            };
+            return roles;
         }
     }
 }
