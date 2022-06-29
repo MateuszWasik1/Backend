@@ -8,22 +8,12 @@ namespace Core.Models
 {
     public class RegisterUserDTO
     {
-        [Required]
         public string UEmail { get; set; }
-
-        [Required]
         public string UFirstName { get; set; }
-
-        [Required]
         public string ULastName { get; set; }
-
-        [Required]
         public string ULogin { get; set; }
-
-        [Required]
-        [MinLength(8)]
         public string UPassword { get; set; }
-
+        public string UPasswordConfirmed { get; set; }
         public int Role { get; set; } = 1; //1 = User
     }
 }

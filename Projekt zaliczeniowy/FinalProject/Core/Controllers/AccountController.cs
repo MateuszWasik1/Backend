@@ -24,5 +24,12 @@ namespace Core.Controllers
             _accountService.RegisterUser(dto);
             return Ok();
         }
+
+        [HttpPost("login")]
+        public ActionResult Login([FromBody] LoginDTO loginDTO)
+        {
+            string token = _accountService.GenerateJwt(loginDTO);
+            return Ok();
+        }
     }
 }
