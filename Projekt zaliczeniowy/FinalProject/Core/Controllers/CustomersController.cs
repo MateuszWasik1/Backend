@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Core.Controllers
 {
+    [Authorize]
     public class CustomersController : Controller
     {
         private readonly Entities.AppContext _context;
@@ -53,6 +55,7 @@ namespace Core.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> Create([Bind("CId,CFirstName,CLastName,CCardCode")] Customers customers)
         {
             if (ModelState.IsValid)
@@ -85,6 +88,7 @@ namespace Core.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> Edit(int id, [Bind("CId,CFirstName,CLastName,CCardCode")] Customers customers)
         {
             if (id != customers.CId)
@@ -136,6 +140,7 @@ namespace Core.Controllers
         // POST: Customers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var customers = await _context.Customers.FindAsync(id);

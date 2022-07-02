@@ -1,0 +1,49 @@
+﻿@model Core.Models.RegisterUserDTO
+
+@{
+    ViewData["Title"] = "Register";
+}
+<h1 class="page-title">Rejestracja użytkownika</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Email:</label>
+                <input asp-for="UEmail" class="form-control" />
+                <span asp-validation-for="UEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Imię:</label>
+                <input asp-for="UFirstName" class="form-control" />
+                <span asp-validation-for="UFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Nazwisko:</label>
+                <input asp-for="ULastName" class="form-control" />
+                <span asp-validation-for="ULastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Login:</label>
+                <input asp-for="ULogin" class="form-control" />
+                <span asp-validation-for="ULogin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Hasło:</label>
+                <input asp-for="UPassword" class="form-control" />
+                <span asp-validation-for="UPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Potwórz hasło:</label>
+                <input asp-for="UPasswordConfirmed" class="form-control" />
+                <span asp-validation-for="UPasswordConfirmed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zarejestruj się" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

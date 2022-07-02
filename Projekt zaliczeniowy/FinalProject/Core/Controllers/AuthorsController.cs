@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Core.Controllers
 {
+    [Authorize]
     public class AuthorsController : Controller
     {
         private readonly Entities.AppContext _context;
@@ -53,6 +55,8 @@ namespace Core.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
+
         public async Task<IActionResult> Create([Bind("AId,AGID,AFirstName,AMiddleName,ALastName,AFullName")] Authors authors)
         {
             if (ModelState.IsValid)
@@ -85,6 +89,8 @@ namespace Core.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
+
         public async Task<IActionResult> Edit(int id, [Bind("AId,AGID,AFirstName,AMiddleName,ALastName,AFullName")] Authors authors)
         {
             if (id != authors.AId)
@@ -136,6 +142,7 @@ namespace Core.Controllers
         // POST: Authors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var authors = await _context.Authors.FindAsync(id);

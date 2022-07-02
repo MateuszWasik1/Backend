@@ -15,7 +15,7 @@ namespace Core.Entities
         public string ULastName { get; set; }
         public string ULogin { get; set; }
         public string UPassword { get; set; }
-        public int RoleId { get; set; }
+        public int RoleId { get; set; } = 1;
         public virtual Role Role { get; set; }
 
     }
