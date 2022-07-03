@@ -11,3 +11,23 @@
 	I. Utworzenie mo¿liwoœci zarejestrowania siê
 	J. Utworzenie menu logowania siê
 	K. Opis korzystania z aplikacji
+
+
+3.Zrobione:
+
+	A. CRUD dla autorów
+	B. CRUD dla ksi¹¿ek
+	C. CRUD dla klinetów 
+	D. CRUD dla bibliotekarzy
+	E. Mo¿liwoœæ rejestracji
+	F. Mo¿liwoœæ logowania (nie dzia³a)
+	G. Seedowanie bazy danych danymi
+	H. Widoki dla ka¿dego CRUDa
+	I. Hashowanie has³a
+	J. Swagger
+	K. Kontrolery API dla ka¿dego CRUDa
+	L. Drobne style dla aplikacji
+	M.
+	N.
+	P.
+	Q.
