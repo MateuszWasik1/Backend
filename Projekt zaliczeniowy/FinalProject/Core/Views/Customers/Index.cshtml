@@ -1,47 +1,53 @@
 ﻿@model IEnumerable<Core.Entities.Customers>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista klientów";
 }
+<link rel="stylesheet" href="~/css/site.css" />
+<div class="box">
+    <div class="row title">
+        <h1 class="title-row">Lista klientów</h1>
 
-<h1>Lista klientów</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nowego klienta</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <span>Imię klienta:</span>            
-            </th>
-            <th>
-                <span>Nazwisko klienta:</span>
-            </th>
-            <th>
-                <span>Numer karty klienta:</span>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CFirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CLastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CCardCode)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CId">Edytuj</a>
-                <a asp-action="Details" asp-route-id="@item.CId">Szczegóły</a>
-                <a asp-action="Delete" asp-route-id="@item.CId">Usuń</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <h1 class="title-row" title="Dodaj nowego klienta">
+            <a asp-action="Create">Dodaj</a>
+        </h1>
+    </div>
+    <table class="table">
+        <!--class="list"-->
+        <thead>
+            <tr>
+                <th>
+                    <span>Imię klienta:</span>
+                </th>
+                <th>
+                    <span>Nazwisko klienta:</span>
+                </th>
+                <th>
+                    <span>Numer karty klienta:</span>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CFirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CLastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CCardCode)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.CId">Edytuj</a>
+                        <a asp-action="Details" asp-route-id="@item.CId">Szczegóły</a>
+                        <a asp-action="Delete" asp-route-id="@item.CId">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
