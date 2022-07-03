@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace Core.Controllers
 {
     [Route("api/account")]
+    [ApiController]
     public class AccountController : ControllerBase
     {
         private readonly IAccountService _accountService;

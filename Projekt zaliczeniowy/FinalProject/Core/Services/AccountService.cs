@@ -54,7 +54,7 @@ namespace Core.Services
         public string GenerateJwt(LoginDTO dto)
         {
             var user = _dbContext.Users
-                .Include(x => x.Role)
+                .Include(x => x.Role.RName)
                 .FirstOrDefault(x => x.UEmail == dto.UEmail);
 
 
