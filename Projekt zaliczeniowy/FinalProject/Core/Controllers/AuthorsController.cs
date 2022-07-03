@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Core.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AuthorsController : Controller
     {
         private readonly Entities.AppContext _context;

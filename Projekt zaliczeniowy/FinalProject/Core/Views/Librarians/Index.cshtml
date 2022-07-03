@@ -3,45 +3,43 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="box">
+    <div class="row title">
+        <h1 class="title-row">Lista bibliotekarzy</h1>
 
-<h1>Lista bibliotekarzy</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nowego bibliotekarza</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <span>Imię bibliotekarza:</span>            
-            </th>
-            <th>
-                <span>Nazwisko bibliotekarza:</span>
-            </th>
-            <th>
-                <span>Email bibliotekarza:</span>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.LFirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LLastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LEmail)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.LId">Edytuj</a>
-                <a asp-action="Details" asp-route-id="@item.LId">Szczegóły</a>
-                <a asp-action="Delete" asp-route-id="@item.LId">Usuń</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <h1 class="title-row" title="Dodaj nowego bibliotekarza">
+            <a asp-action="Create">Dodaj</a>
+        </h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th><span>Imię bibliotekarza:</span></th>
+                <th><span>Nazwisko bibliotekarza:</span></th>
+                <th><span>Email bibliotekarza:</span></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LFirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LLastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LEmail)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.LId">Edytuj</a>
+                        <a asp-action="Details" asp-route-id="@item.LId">Szczegóły</a>
+                        <a asp-action="Delete" asp-route-id="@item.LId">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

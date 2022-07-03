@@ -3,57 +3,55 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="box">
+    <div class="row title">
+        <h1 class="title-row">Lista autorów</h1>
 
-<h1 class="page-title">Lista autorów</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nowego autora</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <span>GUID Autora:</span>            
-            </th>
-            <th>
-                <span>Pierwsze imię:</span>
-            </th>
-            <th>
-                <span>Drugie imię:</span>
-            </th>
-            <th>
-                <span>Nazwisko:</span>
-            </th>
-            <th>
-                <span>Pełne imię:</span>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AGID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AFirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AMiddleName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ALastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AFullName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AId">Edytuj</a>
-                <a asp-action="Details" asp-route-id="@item.AId">Szczegóły</a>
-                <a asp-action="Delete" asp-route-id="@item.AId">Usuń</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <h1 class="title-row" title="Dodaj nowego autora">
+            <a asp-action="Create">Dodaj</a>
+        </h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <span>Pierwsze imię:</span>
+                </th>
+                <th>
+                    <span>Drugie imię:</span>
+                </th>
+                <th>
+                    <span>Nazwisko:</span>
+                </th>
+                <th>
+                    <span>Pełne imię:</span>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AFirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AMiddleName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ALastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AFullName)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.AId">Edytuj</a>
+                        <a asp-action="Details" asp-route-id="@item.AId">Szczegóły</a>
+                        <a asp-action="Delete" asp-route-id="@item.AId">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

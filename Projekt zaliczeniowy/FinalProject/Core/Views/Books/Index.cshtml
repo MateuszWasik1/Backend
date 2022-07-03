@@ -3,46 +3,49 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="box">
+    <div class="row title">
+        <h1 class="title-row">Lista książek</h1>
 
-<h1 class="page-title">Lista książek</h1>
-
-<p>
-    <a asp-action="Create">Dodaj nową książkę</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <span>Tytuł książki:</span>
-            </th>
-            <th>
-                <span>Numer ISBN książki:</span>
-            </th>
-            <th>
-                <span>Data publikacji:</span>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+        <h1 class="title-row" title="Dodaj nową książkę">
+            <a asp-action="Create">Dodaj</a>
+        </h1>
+    </div>
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BTitle)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BISBN)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BPublishDate)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.BId">Edytuj</a>
-                    <a asp-action="Details" asp-route-id="@item.BId">Szczegóły</a>
-                    <a asp-action="Delete" asp-route-id="@item.BId">Usuń</a>
-                </td>
+                <th>
+                    <span>Tytuł książki:</span>
+                </th>
+                <th>
+                    <span>Numer ISBN książki:</span>
+                </th>
+                <th>
+                    <span>Data publikacji:</span>
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BISBN)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BPublishDate)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.BId">Edytuj</a>
+                        <a asp-action="Details" asp-route-id="@item.BId">Szczegóły</a>
+                        <a asp-action="Delete" asp-route-id="@item.BId">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
