@@ -1,0 +1,142 @@
+URL z którego korzystam lokalnie = https://localhost:44377
+
+AUTHORS:
+
+GET
+	{{URL}}/api/Authors
+
+GET/{{ID}}
+	{{URL}}/api/Authors/{ID}
+
+POST
+	{{URL}}/api/Authors
+
+	{
+    		"aFirstName": "string",
+    		"aMiddleName": "string",
+    		"aLastName": "string",
+    		"aFullName": "string"
+  	}
+
+PUT
+	{{URL}}/api/Authors/{id}
+
+	{
+    		"aFirstName": "string",
+    		"aMiddleName": "string",
+    		"aLastName": "string",
+    		"aFullName": "string"
+  	}
+
+DELETE
+	{{URL}}/api/Authors/{id}
+
+
+
+BOOKS:
+
+GET
+	{{URL}}/api/Books
+
+GET/{{ID}}
+	{{URL}}/api/Books/{ID}
+
+POST
+	{{URL}}/api/Books
+
+	{
+  		"bTitle": "string",
+  		"bisbn": "string",
+  		"bPublishDate": "2022-07-10T11:50:46.428Z",
+  	}
+
+PUT
+	{{URL}}/api/Books/{id}
+
+	{
+  		"bTitle": "string",
+  		"bisbn": "string",
+  		"bPublishDate": "2022-07-10T11:50:46.428Z",
+  	}
+
+DELETE
+	{{URL}}/api/Books/{id}
+
+
+
+CUSTOMERS:
+
+GET
+	{{URL}}/api/Customers
+
+GET/{{ID}}
+	{{URL}}/api/Customers/{ID}
+
+POST
+	{{URL}}/api/Customers
+
+	{
+  		"cFirstName": "string",
+  		"cLastName": "string",
+  		"cCardCode": 0,
+  	}
+
+PUT
+	{{URL}}/api/Customers/{id}
+
+	{
+  		"cFirstName": "string",
+  		"cLastName": "string",
+  		"cCardCode": 0,
+  	}
+
+DELETE
+	{{URL}}/api/Customers/{id}
+
+
+
+LIBRARIANS:
+
+GET
+	{{URL}}/api/Librarians
+
+GET/{{ID}}
+	{{URL}}/api/Librarians/{ID}
+
+POST
+	{{URL}}/api/Librarians
+
+	{
+  		"lFirstName": "string",
+  		"lLastName": "string",
+  		"lEmail": "string"
+  	}
+
+PUT
+	{{URL}}/api/Librarians/{id}
+
+	{
+  		"lFirstName": "string",
+  		"lLastName": "string",
+  		"lEmail": "string"
+  	}
+
+DELETE
+	{{URL}}/api/Librarians/{id}
+
+
+
+REGISTRATION:
+
+POST
+	{{URL}}/api/account/register
+
+	{
+  		"uEmail": "string",
+  		"uFirstName": "string",
+  		"uLastName": "string",
+  		"uLogin": "string",
+  		"uPassword": "string",
+  		"uPasswordConfirmed": "string",
+  		"role": 0
+	}
